@@ -1,0 +1,24 @@
+<div class="container">
+  Previous Orders
+
+ <table class="table table-bordered">
+   <thead>
+     <tr>
+       <th>S.No.</th>
+       <th>Order Ref ID</th>
+       <th>Order Date</th>
+       <th>Total</th>
+       <th>Status</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr *ngFor="let order of orders; index as i">
+       <td>{{ i+1 }}</td>
+       <td>{{ order.orderId }}</td>
+       <td>{{ order.orderDate }}</td>
+       <td>{{ order.total }}</td>
+       <td>{{ order.status }}</td>
+     </tr>
+   </tbody>
+ </table>
+</div>
